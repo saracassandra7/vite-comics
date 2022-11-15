@@ -8,6 +8,6 @@ export default {
   <h1>MAIN</h1>
 </template>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
