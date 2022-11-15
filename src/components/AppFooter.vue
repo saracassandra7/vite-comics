@@ -58,13 +58,28 @@ export default {
       <img src="../assets/img/dc-logo-bg.png" alt="">
     </div>
     
-
     </div>
+
+    
+    </div> 
 
     <div class="footer-bottom">
+      <div class="sign-up">
+        <div class="container">
+          <h4>SIGN UP NOW!</h4>
 
-    </div>
-    </div>  
+          <div class="social">
+            <h3>FOLLOW US</h3>
+            <img src="../assets/img/footer-facebook.png" alt="facebook" />
+            <img src="../assets/img/footer-twitter.png" alt="twitter" />
+            <img src="../assets/img/footer-youtube.png" alt="youtube" />
+            <img src="../assets/img/footer-pinterest.png" alt="pinterest" />
+            <img src="../assets/img/footer-periscope.png" alt="periscope" />
+          </div>
+        </div>
+      </div>
+
+    </div> 
   </footer>
 </template>
 
@@ -74,8 +89,6 @@ export default {
 
 footer{
   color: $color-footer;
-  background-color: lightgreen;
- 
 
   .footer-top{
     background-image: url('../assets/img/footer-bg.jpg');
@@ -112,15 +125,46 @@ footer{
         top: -60px;
 
       }
-      
 
     }
 
-
   }
 
+  .footer-bottom{
+
+    .sign-up{
+      background-color: #303030;
+      height: 85px;
+      @include centerFlex('vertical');
+
+
+      .container{
+        @include centerFlex('vertical');
+        justify-content: space-between;
+
+        h4{
+          padding: 13px 20px;
+          border: 2px solid $main-blue;
+          cursor: pointer;
+        }
+
+        .social{
+          @include centerFlex('vertical');
+
+          h3{
+            color: $main-blue;
+            margin-right: 10px;
+          }
+
+          img{
+            margin-left: 15px;
+          }
+        }
+        
+      }
+    }
+  }
   
 }
-
 
 </style>
