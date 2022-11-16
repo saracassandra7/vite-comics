@@ -109,7 +109,7 @@ header{
      margin-bottom: 10px;
 
      &:hover, &.active{
-      border-bottom: 3px solid $main-blue;
+      border-bottom: 4px solid $main-blue;
      }
 
      &.active{
