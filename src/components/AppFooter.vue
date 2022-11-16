@@ -54,13 +54,8 @@ export default {
       </ul>
     </div>
     
-    <div class="logo">
-      <img src="../assets/img/dc-logo-bg.png" alt="">
-    </div>
-    
     </div>
 
-    
     </div> 
 
     <div class="footer-bottom">
@@ -98,7 +93,10 @@ footer{
 
     .container{
       display: flex;
-      position: relative;
+      background-image: url('../assets/img/dc-logo-bg.png');
+      background-repeat: no-repeat;
+      background-position: right;
+      height: 100%;
 
       .col{
         margin-right: 30px;
@@ -117,13 +115,6 @@ footer{
           line-height: 150%;
         }
        
-      }
-
-      .logo{
-        position: absolute;
-        right: 0;
-        top: -60px;
-
       }
 
     }
@@ -158,6 +149,7 @@ footer{
 
           img{
             margin-left: 15px;
+            cursor: pointer;
           }
         }
         
