@@ -83,8 +83,6 @@ main{
     flex-wrap: wrap;
   }
 
-  .btn h4{
-  }
 }
 
 </style>
