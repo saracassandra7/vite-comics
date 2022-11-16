@@ -1,60 +1,11 @@
 <script>
+import menu from "../assets/data/header-menu.js";
+
 export default {
   name: 'AppHeader',
   data(){
     return{
-      menu:[
-        {
-          text: 'characters',
-          href: '#',
-          current: 'false'
-        },
-        {
-          text: 'comics',
-          href: '#',
-          current: 'active'
-        },
-        {
-          text: 'movies',
-          href: '#',
-          current: 'false'
-        },
-        {
-          text: 'tv',
-          href: '#',
-          current: 'false'
-        },
-        {
-          text: 'games',
-          href: '#',
-          current: 'false'
-        },
-        {
-          text: 'collectibles',
-          href: '#',
-          current: 'false'
-        },
-        {
-          text: 'videos',
-          href: '#',
-          current: 'false'
-        },
-        {
-          text: 'fans',
-          href: '#',
-          current: 'false'
-        },
-        {
-          text: 'news',
-          href: '#',
-          current: 'false'
-        },
-        {
-          text: 'shop',
-          href: '#',
-          current: 'false'
-        },
-      ]
+      menu
     }
   }
 }
@@ -70,7 +21,7 @@ export default {
       <nav>
         <ul>
           <li v-for="(link, index) in menu" :key="index">
-            <a :class="{'active': link.current== 'active'}" :href="link.href">{{link.text}}</a>
+            <a :class="{'active': link.current== 'true'}" :href="link.href">{{link.text}}</a>
           </li>
 
         </ul>
