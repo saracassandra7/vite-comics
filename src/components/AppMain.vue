@@ -28,6 +28,10 @@ export default {
 
       </div>
 
+      <div class="container-btn">
+        <button>LOAD MORE</button>
+      </div>
+
     </div>
 
 
@@ -42,6 +46,31 @@ main{
   background-color: #1c1c1c;
   color: #f5e8fc;
 
+  .btn, button{
+    background-color: $main-blue;
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  .btn{
+    transform: translateY(-20px)
+  }
+
+  .container-btn{
+    display: flex;
+    justify-content: center;
+
+    button{
+     color: #f5e8fc;
+     outline: none;
+     border: none;
+     font-weight: bold;
+    }
+
+  }
+
   .jumbotron{
     height: 350px;
     background-image: url(../src/assets/img/jumbotron.jpg);
@@ -52,6 +81,9 @@ main{
   .comics{
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .btn h4{
   }
 }
 
